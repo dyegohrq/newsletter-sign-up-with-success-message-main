@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Sign-up form start -->
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/style/style.css" />
 
-  Stay updated!
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  Join 60,000+ product managers receiving monthly updates on:
+  </head>
+  <body>
+    <!-- Sign-up form start -->
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+    <article id="sign_up">
+      <section class="img_sign_up"></section>
+      <section class="text_sign_up">
+        <h1 class="text-present-1">Stay updated!</h1>
+        <p class="text-present-2">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list">
+          <li class="text-present-2">
+            <i class="fa-solid fa-circle-check"></i>Product discovery and
+            building what matters
+          </li>
+          <li class="text-present-2">
+            <i class="fa-solid fa-circle-check"></i>Measuring to ensure updates
+            are a success
+          </li>
+          <li class="text-present-2">
+            <i class="fa-solid fa-circle-check"></i>And much more!
+          </li>
+        </ul>
+        <form id="form">
+          <div class="title-form">
+            <label for="email" class="text-present-3">Email address</label>
+            <span class="text-present-3">Error</span>
+          </div>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+            class="text-present-2"
+          />
+          <button type="submit" class="button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </article>
 
-  Email address
-  email@company.com
+    <!-- Sign-up form end -->
 
-  Subscribe to monthly newsletter
+    <!-- Success message start -->
 
-  <!-- Sign-up form end -->
+    <ariticle id="success">
+      <section class="text-success">
+        <img src="assets/images/icon-success.svg" alt="icon success" />
+        <h1 class="text-present-1">Thanks for subscribing!</h1>
+        <p class="text-present-2">
+          A confirmation email has been sent to
+          <span id="email-span">ash@loremcompany.com</span>. Please open it and click
+          the button inside to confirm your subscription.
+        </p>
+      </section>
+      <button class="button" id="button">Dismiss message</button>
+    </ariticle>
 
-  <!-- Success message start -->
+    <!-- Success message end -->
 
-  Thanks for subscribing!
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/dyegohrq/newsletter-sign-up-with-success-message-main" target="_blank">Dyego henrique</a>.
+    </div>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script
+      src="https://kit.fontawesome.com/24690ddc1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
